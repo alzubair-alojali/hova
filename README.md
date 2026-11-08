@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://github.com/alzubair-alojali/hova/actions/workflows/ci.yml"><img src="https://github.com/alzubair-alojali/hova/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://github.com/alzubair-alojali/hova/releases"><img src="https://img.shields.io/github/v/release/alzubair-alojali/hova?color=8be9ba&amp;label=release" alt="Release" /></a>
+  <a href="https://www.npmjs.com/package/hova-cli"><img src="https://img.shields.io/npm/v/hova-cli?color=8be9ba&amp;label=npm" alt="npm package" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-8be9ba" alt="MIT license" /></a>
   <img src="https://img.shields.io/badge/Node.js-22%2B-8be9ba" alt="npm installation requires Node.js 22 or newer" />
 </p>
@@ -46,13 +47,25 @@ Hova keeps those details in a local address book. Run `hova` for a keyboard-driv
 **Install with npm. No Go installation needed.** Requires Node.js 22 or newer:
 
 ```sh
-npm install -g https://github.com/alzubair-alojali/hova/releases/download/v0.1.1/hova-cli-0.1.1.tgz
+npm install -g hova-cli
 hova
 ```
 
-This installs the official npm tarball from GitHub Releases. On Windows PowerShell, you can use `npm.cmd` and `hova.cmd` if your execution policy blocks PowerShell script shims.
+Or launch without a global installation:
+
+```sh
+npx hova-cli
+```
+
+On Windows PowerShell, you can use `npm.cmd`, `npx.cmd`, and `hova.cmd` if your execution policy blocks PowerShell script shims.
 
 The package bundles prebuilt executables for all six supported systems. A small Node launcher selects yours. There are no install scripts, runtime dependencies, additional binary downloads, or compilation steps; `--ignore-scripts` works too. The command remains `hova` even though the package is called `hova-cli` (`hova` on npm belongs to an unrelated project).
+
+You can also install the official npm tarball directly from GitHub Releases:
+
+```sh
+npm install -g https://github.com/alzubair-alojali/hova/releases/download/v0.1.1/hova-cli-0.1.1.tgz
+```
 
 **Prefer no Node runtime?** Download a standalone binary from [Releases](https://github.com/alzubair-alojali/hova/releases/latest). Extract the archive, and place `hova` (or `hova.exe`) in a directory on your `PATH`. SHA-256 checksums are included with each release; the npm tarball has a separate `npm-checksums.txt` file.
 
