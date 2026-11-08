@@ -14,10 +14,23 @@ jobs:
       - uses: actions/setup-go@v7
         with:
           go-version-file: go.mod
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
       - run: go test ./...
+      - run: npm test
+      - run: npm run build:npm
+      - run: npm run test:package
       - uses: goreleaser/goreleaser-action@v7
         with:
           version: '~> v2'
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm pack --ignore-scripts --pack-destination dist
+      - name: Checksum npm archive
+        run: cd dist && sha256sum hova-cli-*.tgz > npm-checksums.txt
+      - name: Attach npm package
+        run: gh release upload "$GITHUB_REF_NAME" dist/hova-cli-*.tgz dist/npm-checksums.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

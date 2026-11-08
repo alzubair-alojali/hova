@@ -6,7 +6,7 @@
   <a href="https://github.com/alzubair-alojali/hova/actions/workflows/ci.yml"><img src="https://github.com/alzubair-alojali/hova/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://github.com/alzubair-alojali/hova/releases"><img src="https://img.shields.io/github/v/release/alzubair-alojali/hova?color=8be9ba&amp;label=release" alt="Release" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-8be9ba" alt="MIT license" /></a>
-  <img src="https://img.shields.io/badge/Go-1.24%2B-8be9ba" alt="Go 1.24 or newer" />
+  <img src="https://img.shields.io/badge/Node.js-22%2B-8be9ba" alt="npm installation requires Node.js 22 or newer" />
 </p>
 
 <p align="center">
@@ -43,7 +43,18 @@ Hova keeps those details in a local address book. Run `hova` for a keyboard-driv
 
 ## Get Hova
 
-**Download a binary** from [Releases](https://github.com/alzubair-alojali/hova/releases/latest). Choose your operating system and architecture, extract the archive, and place `hova` (or `hova.exe`) in a directory on your `PATH`. SHA-256 checksums are included with each release.
+**Install with npm. No Go installation needed.** Requires Node.js 22 or newer:
+
+```sh
+npm install -g https://github.com/alzubair-alojali/hova/releases/download/v0.1.1/hova-cli-0.1.1.tgz
+hova
+```
+
+This installs the official npm tarball from GitHub Releases. On Windows PowerShell, you can use `npm.cmd` and `hova.cmd` if your execution policy blocks PowerShell script shims.
+
+The package bundles prebuilt executables for all six supported systems. A small Node launcher selects yours. There are no install scripts, runtime dependencies, additional binary downloads, or compilation steps; `--ignore-scripts` works too. The command remains `hova` even though the package is called `hova-cli` (`hova` on npm belongs to an unrelated project).
+
+**Prefer no Node runtime?** Download a standalone binary from [Releases](https://github.com/alzubair-alojali/hova/releases/latest). Extract the archive, and place `hova` (or `hova.exe`) in a directory on your `PATH`. SHA-256 checksums are included with each release; the npm tarball has a separate `npm-checksums.txt` file.
 
 | System | Archive |
 | :--- | :--- |
@@ -54,15 +65,15 @@ Hova keeps those details in a local address book. Run `hova` for a keyboard-driv
 | Windows, x86-64 | `hova_VERSION_windows_amd64.zip` |
 | Windows, ARM64 | `hova_VERSION_windows_arm64.zip` |
 
-Replace `VERSION` with the release number, such as `0.1.0`. Binaries are unsigned; your operating system may ask you to allow a downloaded application.
+Replace `VERSION` with the release number, such as `0.1.1`. Binaries are unsigned; your operating system may ask you to allow a downloaded application.
 
 **Have Go 1.24 or newer?** Install a pinned version:
 
 ```sh
-go install github.com/alzubair-alojali/hova/cmd/hova@v0.1.0
+go install github.com/alzubair-alojali/hova/cmd/hova@v0.1.1
 ```
 
-Make sure Go's binary directory is on your `PATH`. Hova also needs the native **OpenSSH client** (`ssh`) on your `PATH` to make connections. No running service or account is required.
+For Go installation only, make sure Go's binary directory is on your `PATH`. All installation methods need the native **OpenSSH client** (`ssh`) on your `PATH` to make connections. No running service or account is required to use Hova.
 
 ## Your first connection
 

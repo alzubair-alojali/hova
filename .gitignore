@@ -1,5 +1,8 @@
 /bin/
 /dist/
+/native/
+/node_modules/
+/*.tgz
 /.tmp/
 *.exe
 *.test

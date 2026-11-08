@@ -1,0 +1,20 @@
+{
+  "name": "hova-cli",
+  "version": "0.1.1",
+  "description": "Your servers. One command away. A local SSH workspace for your terminal and AI agents.",
+  "license": "MIT",
+  "author": "Alzubair Alojali",
+  "homepage": "https://github.com/alzubair-alojali/hova#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/alzubair-alojali/hova.git" },
+  "bugs": { "url": "https://github.com/alzubair-alojali/hova/issues" },
+  "keywords": ["ssh", "terminal", "cli", "servers", "vps", "ai-agents"],
+  "engines": { "node": ">=22" },
+  "bin": { "hova": "npm/cli.cjs" },
+  "files": ["npm/*.cjs", "native/", "LICENSE", "README.md", "assets/*.svg"],
+  "scripts": {
+    "test": "node --test test/npm/launcher.test.cjs test/npm/platform.test.cjs",
+    "test:package": "node --test test/npm/package.test.cjs",
+    "build:npm": "node scripts/build-npm.cjs"
+  },
+  "publishConfig": { "access": "public" }
+}

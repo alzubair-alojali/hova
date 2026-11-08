@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1 — 2026-11-08
+
+- npm installation through the `hova-cli` package, keeping the terminal command `hova`.
+- Dependency-free Node launcher with bundled Windows, macOS and Linux binaries for x64 and arm64.
+- Inherited terminal streams, literal argument forwarding, exit-code preservation and signal forwarding.
+- No install scripts, runtime binary downloads or Go requirement for npm users.
+- Cross-platform npm tests and downloadable npm release tarballs with checksums.
+
 ## 0.1.0 — 2026-11-08
 
 - Searchable terminal workspace with keyboard navigation and connection profiles.
