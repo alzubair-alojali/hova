@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+ <title id="title">Hova — Your servers. One command away.</title>
+ <desc id="desc">Dark green Hova banner with mint typography and a network of server connections.</desc>
+ <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#19372a" stroke-width="1"/></pattern></defs>
+ <rect width="1200" height="440" rx="18" fill="#0c1712"/>
+ <rect x="720" width="480" height="440" fill="url(#grid)"/>
+ <path d="M720 0v440" stroke="#234331"/>
+ <g transform="translate(56 44)"><rect width="44" height="44" rx="12" fill="#8be9ba"/><path d="M11 11h6v10h10V11h6v22h-6v-7H17v7h-6z" fill="#10251c"/><text x="60" y="31" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700" letter-spacing="-1" fill="#e7f3eb">hova</text></g>
+ <text x="56" y="139" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="3" fill="#8be9ba">YOUR PERSONAL SSH WORKSPACE</text>
+ <text x="52" y="219" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-3" fill="#e7f3eb">Your servers.</text>
+ <text x="52" y="290" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-3" fill="#8be9ba">One command away.</text>
+ <text x="56" y="337" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#9aafa2">Remember the name. Hova remembers the rest.</text>
+ <g font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.5" fill="#b3c8bb"><text x="56" y="399">TERMINAL NATIVE</text><circle cx="192" cy="395" r="2" fill="#8be9ba"/><text x="211" y="399">AGENT FRIENDLY</text><circle cx="350" cy="395" r="2" fill="#8be9ba"/><text x="369" y="399">LOCAL FIRST</text></g>
+ <g fill="none" stroke="#406c53" stroke-width="1.5"><path d="M960 220 815 112M960 220l149-88M960 220 830 342M960 220l147 113"/><circle cx="960" cy="220" r="77" stroke-dasharray="3 9"/></g>
+ <g fill="#10251c" stroke="#3f6a51"><rect x="777" y="82" width="76" height="60" rx="12"/><rect x="1071" y="102" width="76" height="60" rx="12"/><rect x="792" y="312" width="76" height="60" rx="12"/><rect x="1069" y="303" width="76" height="60" rx="12"/></g>
+ <g fill="none" stroke="#8be9ba" stroke-width="2"><path d="M797 103h36m-36 10h36m-36 10h22M1091 123h36m-36 10h36m-36 10h22M812 333h36m-36 10h36m-36 10h22M1089 324h36m-36 10h36m-36 10h22"/></g>
+ <rect x="919" y="179" width="82" height="82" rx="23" fill="#8be9ba"/>
+ <path d="M938 199h9v16h26v-16h9v42h-9v-17h-26v17h-9z" fill="#10251c"/>
+ <g fill="#8be9ba"><circle cx="815" cy="112" r="3"/><circle cx="1109" cy="132" r="3"/><circle cx="830" cy="342" r="3"/><circle cx="1107" cy="333" r="3"/></g>
+ <text x="957" y="409" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="2" fill="#7f9d89">ONE PLACE. EVERY CONNECTION.</text>
+</svg>

@@ -1,0 +1,10 @@
+/bin/
+/dist/
+/.tmp/
+*.exe
+*.test
+coverage.out
+servers.json
+*.lock
+.DS_Store
+Thumbs.db
